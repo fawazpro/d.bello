@@ -13,6 +13,8 @@
 
  	//script  for  ease //
  	$(document).ready(function () {
+		$('#content,img').addClass('img-fluid');
+
  		/*
  		 var defaults = {
  			 containerID: 'toTop', // fading element id

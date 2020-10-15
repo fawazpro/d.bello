@@ -645,7 +645,16 @@ ul.footer-nav-wthree li a {
     -o-background-size: cover;
     -ms-background-size: cover;
     -moz-background-size: cover;
-    min-height: 340px;
+    min-height: 240px;
+}
+.mian-content-3 {
+    background: url(../images/1.jpg) no-repeat 0px -96px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    -moz-background-size: cover;
+    min-height: 150px;
 }
 
 h2.font-w3ls-style {
