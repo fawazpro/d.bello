@@ -1,0 +1,208 @@
+[2020-07-03 09:41:43] api[aaicnote].ERROR: Directus\Database\Exception\UnknownFilterException: Unknown filter:  in F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php:1512
+Stack trace:
+#0 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1832): Directus\Database\TableGateway\RelationalTableGateway->doFilter
+#1 [internal function]: Directus\Database\TableGateway\RelationalTableGateway->processFilter
+#2 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(831): call_user_func_array
+#3 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1145): Directus\Database\TableGateway\RelationalTableGateway->applyParamsToTableEntriesSelect
+#4 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1287): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#5 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(856): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#6 [internal function]: Directus\Database\TableGateway\RelationalTableGateway->getItems
+#7 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(347): call_user_func_array
+#8 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(289): Directus\Services\AbstractService->getDataAndSetResponseCacheTags
+#9 F:\aaic.directus\src\core\Directus\Services\ItemsService.php(82): Directus\Services\AbstractService->getItemsAndSetResponseCacheTags
+#10 F:\aaic.directus\src\endpoints\Items.php(43): Directus\Services\ItemsService->findAll
+#11 [internal function]: Directus\Api\Routes\Items->all
+#12 F:\aaic.directus\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#13 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#14 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#15 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#16 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#21 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#26 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#30 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#31 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#32 [internal function]: Slim\DeferredCallable->__invoke
+#33 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#34 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#35 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#36 F:\aaic.directus\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#37 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#38 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#39 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 F:\aaic.directus\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#43 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#44 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#45 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 F:\aaic.directus\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#49 [internal function]: RKA\Middleware\IpAddress->__invoke
+#50 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#54 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#55 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#56 [internal function]: Slim\DeferredCallable->__invoke
+#57 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#58 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#59 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#60 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#61 [internal function]: Slim\DeferredCallable->__invoke
+#62 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#63 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#64 F:\aaic.directus\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#65 F:\aaic.directus\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#66 F:\aaic.directus\src\core\Directus\Application\Application.php(161): Slim\App->run
+#67 F:\aaic.directus\public\index.php(5): Directus\Application\Application->run [] []
+[2020-07-03 10:24:37] api[aaicnote].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in F:\aaic.directus\src\core\Directus\Permissions\Acl.php:991
+Stack trace:
+#0 F:\aaic.directus\src\core\Directus\Database\TableGateway\BaseTableGateway.php(1141): Directus\Permissions\Acl->enforceReadOnce
+#1 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1151): Directus\Database\TableGateway\BaseTableGateway->enforceReadPermission
+#2 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1287): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#3 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(856): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#4 [internal function]: Directus\Database\TableGateway\RelationalTableGateway->getItems
+#5 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(347): call_user_func_array
+#6 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(289): Directus\Services\AbstractService->getDataAndSetResponseCacheTags
+#7 F:\aaic.directus\src\core\Directus\Services\ItemsService.php(82): Directus\Services\AbstractService->getItemsAndSetResponseCacheTags
+#8 F:\aaic.directus\src\endpoints\Items.php(43): Directus\Services\ItemsService->findAll
+#9 [internal function]: Directus\Api\Routes\Items->all
+#10 F:\aaic.directus\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#11 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#12 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#13 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#14 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#15 [internal function]: Slim\DeferredCallable->__invoke
+#16 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#17 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#18 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#19 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#20 [internal function]: Slim\DeferredCallable->__invoke
+#21 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#22 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#23 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#24 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#25 [internal function]: Slim\DeferredCallable->__invoke
+#26 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#27 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#28 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#29 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#30 [internal function]: Slim\DeferredCallable->__invoke
+#31 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#32 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#33 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#34 F:\aaic.directus\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#35 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#36 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#37 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#38 [internal function]: Slim\DeferredCallable->__invoke
+#39 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#40 F:\aaic.directus\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#41 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#42 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#43 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#44 [internal function]: Slim\DeferredCallable->__invoke
+#45 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#46 F:\aaic.directus\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#47 [internal function]: RKA\Middleware\IpAddress->__invoke
+#48 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#49 [internal function]: Slim\DeferredCallable->__invoke
+#50 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#51 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#52 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#53 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#54 [internal function]: Slim\DeferredCallable->__invoke
+#55 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#56 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#57 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#58 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#59 [internal function]: Slim\DeferredCallable->__invoke
+#60 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#61 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#62 F:\aaic.directus\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#63 F:\aaic.directus\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#64 F:\aaic.directus\src\core\Directus\Application\Application.php(161): Slim\App->run
+#65 F:\aaic.directus\public\index.php(5): Directus\Application\Application->run [] []
+[2020-07-03 10:53:59] api[aaicnote].ERROR: Directus\Database\Exception\UnknownFilterException: Unknown filter:  in F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php:1512
+Stack trace:
+#0 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1832): Directus\Database\TableGateway\RelationalTableGateway->doFilter
+#1 [internal function]: Directus\Database\TableGateway\RelationalTableGateway->processFilter
+#2 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(831): call_user_func_array
+#3 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1145): Directus\Database\TableGateway\RelationalTableGateway->applyParamsToTableEntriesSelect
+#4 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(1287): Directus\Database\TableGateway\RelationalTableGateway->fetchItems
+#5 F:\aaic.directus\src\core\Directus\Database\TableGateway\RelationalTableGateway.php(856): Directus\Database\TableGateway\RelationalTableGateway->fetchData
+#6 [internal function]: Directus\Database\TableGateway\RelationalTableGateway->getItems
+#7 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(347): call_user_func_array
+#8 F:\aaic.directus\src\core\Directus\Services\AbstractService.php(289): Directus\Services\AbstractService->getDataAndSetResponseCacheTags
+#9 F:\aaic.directus\src\core\Directus\Services\ItemsService.php(82): Directus\Services\AbstractService->getItemsAndSetResponseCacheTags
+#10 F:\aaic.directus\src\endpoints\Items.php(43): Directus\Services\ItemsService->findAll
+#11 [internal function]: Directus\Api\Routes\Items->all
+#12 F:\aaic.directus\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#13 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#14 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#15 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#16 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#17 [internal function]: Slim\DeferredCallable->__invoke
+#18 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#19 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#20 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#21 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#22 [internal function]: Slim\DeferredCallable->__invoke
+#23 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#24 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#25 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#26 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#27 [internal function]: Slim\DeferredCallable->__invoke
+#28 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#29 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#30 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#31 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#32 [internal function]: Slim\DeferredCallable->__invoke
+#33 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#34 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#35 F:\aaic.directus\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#36 F:\aaic.directus\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#37 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#38 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#39 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 F:\aaic.directus\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#43 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#44 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#45 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#46 [internal function]: Slim\DeferredCallable->__invoke
+#47 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#48 F:\aaic.directus\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#49 [internal function]: RKA\Middleware\IpAddress->__invoke
+#50 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#51 [internal function]: Slim\DeferredCallable->__invoke
+#52 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#53 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#54 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#55 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#56 [internal function]: Slim\DeferredCallable->__invoke
+#57 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#58 F:\aaic.directus\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#59 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#60 F:\aaic.directus\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#61 [internal function]: Slim\DeferredCallable->__invoke
+#62 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#63 F:\aaic.directus\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#64 F:\aaic.directus\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#65 F:\aaic.directus\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#66 F:\aaic.directus\src\core\Directus\Application\Application.php(161): Slim\App->run
+#67 F:\aaic.directus\public\index.php(5): Directus\Application\Application->run [] []

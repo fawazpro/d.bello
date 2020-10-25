@@ -1,0 +1,260 @@
+[2020-10-25 08:14:25] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:14:27] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:14:27] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:17:50] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:17:52] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:17:52] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:18:16] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:18:39] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:18:44] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:23:55] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:24:10] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:24:10] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:24:36] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:24:43] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:24:43] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:26:31] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:26:39] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:26:39] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:28:28] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-25 08:28:36] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []

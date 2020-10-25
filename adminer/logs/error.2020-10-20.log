@@ -1,0 +1,410 @@
+[2020-10-20 10:53:05] api[].ERROR: Directus\Exception\NotInstalledException: This Directus instance has not been configured. Install via the Directus App (eg: /admin) or read more about configuration at: https://docs.directus.io/getting-started/installation.html#configure in S:\dbello\adminer\src\endpoints\Server.php:46
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Server->projects
+#1 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->__invoke
+#4 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#6 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#7 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#9 [internal function]: Slim\DeferredCallable->__invoke
+#10 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#11 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#12 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#13 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#14 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#15 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:28:36] api[drbello].ERROR: Directus\Exception\SQLException: Can't make this field required. There are items in this collection with no value for this field. in S:\dbello\adminer\src\endpoints\Fields.php:122
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Fields->update
+#1 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#4 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#6 [internal function]: Slim\DeferredCallable->__invoke
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#8 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#9 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#10 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#13 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#14 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#15 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#18 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#20 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#23 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#25 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#26 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#27 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#29 [internal function]: Slim\DeferredCallable->__invoke
+#30 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#31 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#32 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#33 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#37 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#38 [internal function]: RKA\Middleware\IpAddress->__invoke
+#39 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#43 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#44 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#45 [internal function]: Slim\DeferredCallable->__invoke
+#46 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#47 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#48 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#49 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#50 [internal function]: Slim\DeferredCallable->__invoke
+#51 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#52 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#54 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#55 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#56 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:28:46] api[drbello].ERROR: Directus\Exception\SQLException: Can't make this field required. There are items in this collection with no value for this field. in S:\dbello\adminer\src\endpoints\Fields.php:122
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Fields->update
+#1 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#4 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#6 [internal function]: Slim\DeferredCallable->__invoke
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#8 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#9 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#10 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#13 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#14 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#15 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#18 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#20 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#23 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#25 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#26 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#27 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#29 [internal function]: Slim\DeferredCallable->__invoke
+#30 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#31 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#32 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#33 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#37 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#38 [internal function]: RKA\Middleware\IpAddress->__invoke
+#39 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#43 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#44 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#45 [internal function]: Slim\DeferredCallable->__invoke
+#46 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#47 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#48 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#49 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#50 [internal function]: Slim\DeferredCallable->__invoke
+#51 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#52 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#54 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#55 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#56 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:30:45] api[drbello].ERROR: Directus\Exception\SQLException: Can't make this field required. There are items in this collection with no value for this field. in S:\dbello\adminer\src\endpoints\Fields.php:122
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Fields->update
+#1 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#4 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#6 [internal function]: Slim\DeferredCallable->__invoke
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#8 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#9 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#10 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#13 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#14 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#15 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#18 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#20 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#23 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#25 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#26 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#27 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#29 [internal function]: Slim\DeferredCallable->__invoke
+#30 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#31 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#32 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#33 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#37 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#38 [internal function]: RKA\Middleware\IpAddress->__invoke
+#39 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#43 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#44 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#45 [internal function]: Slim\DeferredCallable->__invoke
+#46 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#47 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#48 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#49 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#50 [internal function]: Slim\DeferredCallable->__invoke
+#51 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#52 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#54 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#55 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#56 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:30:49] api[drbello].ERROR: Directus\Exception\SQLException: Can't make this field required. There are items in this collection with no value for this field. in S:\dbello\adminer\src\endpoints\Fields.php:122
+Stack trace:
+#0 [internal function]: Directus\Api\Routes\Fields->update
+#1 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#2 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#3 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#4 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#6 [internal function]: Slim\DeferredCallable->__invoke
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#8 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#9 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#10 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#11 [internal function]: Slim\DeferredCallable->__invoke
+#12 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#13 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#14 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#15 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#16 [internal function]: Slim\DeferredCallable->__invoke
+#17 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#18 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#19 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#20 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#21 [internal function]: Slim\DeferredCallable->__invoke
+#22 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#23 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#25 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#26 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#27 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#29 [internal function]: Slim\DeferredCallable->__invoke
+#30 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#31 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#32 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#33 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#35 [internal function]: Slim\DeferredCallable->__invoke
+#36 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#37 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#38 [internal function]: RKA\Middleware\IpAddress->__invoke
+#39 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#40 [internal function]: Slim\DeferredCallable->__invoke
+#41 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#42 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#43 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#44 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#45 [internal function]: Slim\DeferredCallable->__invoke
+#46 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#47 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#48 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#49 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#50 [internal function]: Slim\DeferredCallable->__invoke
+#51 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#52 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#54 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#55 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#56 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:57:47] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\public\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 11:58:12] api[uploads].ERROR: Directus\Exception\UnauthorizedException: Unauthorized request in S:\dbello\adminer\src\helpers\app.php:287
+Stack trace:
+#0 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(518): Directus\{closure}
+#1 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->__invoke
+#2 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#3 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#4 [internal function]: Slim\DeferredCallable->__invoke
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#7 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#8 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#9 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#10 S:\dbello\adminer\public\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 12:03:53] api[drbello].ERROR: Directus\Exception\UnprocessableEntityException: The value submitted (<div>
+<div>Lorem&nbsp;ipsum,&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Hic&nbsp;iusto&nbsp;laborum&nbsp;quia&nbsp;deleniti&nbsp;ex&nbsp;adipisci&nbsp;fuga&nbsp;dicta&nbsp;veritatis&nbsp;eaque&nbsp;illo?&nbsp;Voluptates&nbsp;aliquid&nbsp;adipisci&nbsp;excepturi&nbsp;maxime&nbsp;qui&nbsp;expedita,&nbsp;ut,&nbsp;exercitationem&nbsp;commodi&nbsp;error&nbsp;dolorum&nbsp;nisi&nbsp;facilis&nbsp;odit&nbsp;dolor&nbsp;ex.&nbsp;Quasi&nbsp;a&nbsp;sint&nbsp;tempora&nbsp;reiciendis&nbsp;consectetur&nbsp;similique&nbsp;pariatur&nbsp;nostrum&nbsp;eligendi?&nbsp;Ab&nbsp;minus&nbsp;incidunt&nbsp;vitae&nbsp;corporis,&nbsp;sit&nbsp;nihil&nbsp;officiis&nbsp;ratione&nbsp;doloremque&nbsp;labore&nbsp;dolores&nbsp;officia&nbsp;delectus.&nbsp;Vero,&nbsp;deleniti&nbsp;atque?&nbsp;Similique&nbsp;quam&nbsp;eum&nbsp;a,&nbsp;architecto&nbsp;totam&nbsp;quo&nbsp;nemo&nbsp;dicta&nbsp;saepe&nbsp;ratione&nbsp;nam&nbsp;distinctio&nbsp;perferendis,&nbsp;molestias&nbsp;cumque&nbsp;porro&nbsp;ducimus&nbsp;rem&nbsp;libero&nbsp;nobis,&nbsp;velit&nbsp;quae&nbsp;dolorem&nbsp;eveniet&nbsp;commodi&nbsp;aliquam&nbsp;repudiandae.&nbsp;Unde,&nbsp;eius.&nbsp;Quasi&nbsp;expedita&nbsp;cum&nbsp;voluptatibus&nbsp;consectetur,&nbsp;enim,&nbsp;nobis&nbsp;veniam,&nbsp;sed&nbsp;autem&nbsp;doloremque&nbsp;neque&nbsp;natus&nbsp;repellat&nbsp;animi&nbsp;adipisci&nbsp;ut&nbsp;inventore&nbsp;iusto&nbsp;assumenda&nbsp;nihil&nbsp;temporibus&nbsp;beatae&nbsp;minus&nbsp;ea.&nbsp;Quibusdam&nbsp;corrupti&nbsp;ullam&nbsp;itaque&nbsp;aliquam&nbsp;nam&nbsp;eveniet&nbsp;perspiciatis,&nbsp;doloremque&nbsp;incidunt&nbsp;provident&nbsp;modi&nbsp;corporis&nbsp;non&nbsp;commodi,&nbsp;asperiores&nbsp;ex&nbsp;quod&nbsp;accusantium&nbsp;in&nbsp;dolorum&nbsp;minus.&nbsp;Architecto&nbsp;maxime&nbsp;nesciunt&nbsp;explicabo&nbsp;accusantium&nbsp;sint&nbsp;iusto&nbsp;consequatur&nbsp;omnis,&nbsp;aut&nbsp;ducimus&nbsp;eum&nbsp;praesentium&nbsp;est&nbsp;quia&nbsp;impedit&nbsp;quasi&nbsp;illo&nbsp;quas&nbsp;consectetur,&nbsp;veritatis&nbsp;minima&nbsp;error&nbsp;veniam&nbsp;eius!&nbsp;Blanditiis&nbsp;quisquam,&nbsp;earum,&nbsp;nesciunt&nbsp;sunt&nbsp;reprehenderit&nbsp;molestiae&nbsp;recusandae&nbsp;itaque&nbsp;amet&nbsp;veniam&nbsp;quam&nbsp;explicabo&nbsp;tenetur&nbsp;delectus&nbsp;illo?&nbsp;Consectetur&nbsp;soluta&nbsp;aperiam&nbsp;ipsam&nbsp;dolor&nbsp;totam,&nbsp;facilis&nbsp;voluptatibus&nbsp;vitae&nbsp;sequi&nbsp;porro&nbsp;numquam&nbsp;aliquid,&nbsp;enim&nbsp;magnam&nbsp;facere&nbsp;suscipit&nbsp;ratione&nbsp;placeat&nbsp;aspernatur&nbsp;explicabo&nbsp;iure&nbsp;incidunt&nbsp;illum&nbsp;praesentium&nbsp;eius&nbsp;optio&nbsp;repudiandae&nbsp;quia.&nbsp;Maxime&nbsp;saepe&nbsp;a&nbsp;deserunt&nbsp;blanditiis&nbsp;fuga&nbsp;eius&nbsp;quod&nbsp;debitis&nbsp;quae&nbsp;eos?&nbsp;In&nbsp;maxime&nbsp;accusamus&nbsp;et&nbsp;rem&nbsp;quae?&nbsp;Pariatur&nbsp;accusantium&nbsp;amet&nbsp;cumque&nbsp;blanditiis&nbsp;asperiores&nbsp;officiis&nbsp;et&nbsp;accusamus&nbsp;distinctio&nbsp;molestiae&nbsp;laborum&nbsp;vero&nbsp;consequatur&nbsp;eius&nbsp;illum&nbsp;sit&nbsp;fugiat&nbsp;quo&nbsp;dolores&nbsp;aspernatur&nbsp;deleniti&nbsp;repellendus&nbsp;voluptatem,&nbsp;praesentium&nbsp;natus&nbsp;rem&nbsp;nostrum&nbsp;culpa.&nbsp;Velit&nbsp;voluptate&nbsp;voluptatibus&nbsp;eveniet&nbsp;accusantium&nbsp;quam&nbsp;neque&nbsp;optio,&nbsp;cupiditate&nbsp;quasi&nbsp;odio&nbsp;nostrum&nbsp;nemo&nbsp;magnam&nbsp;saepe&nbsp;expedita&nbsp;suscipit.&nbsp;Nam&nbsp;illum&nbsp;reiciendis,&nbsp;accusamus&nbsp;officiis&nbsp;modi&nbsp;ex&nbsp;numquam&nbsp;cupiditate&nbsp;ab&nbsp;aliquid&nbsp;dolorum?&nbsp;Voluptatem&nbsp;hic&nbsp;quae&nbsp;repellendus&nbsp;tenetur&nbsp;ipsa&nbsp;quis,&nbsp;aliquam&nbsp;nobis&nbsp;ullam&nbsp;dolorem&nbsp;deserunt&nbsp;dolorum.&nbsp;Dolore.</div>
+</div>) for 'Content' is longer than the field's supported length (2000). Please submit a shorter value or ask an Admin to increase the length. in S:\dbello\adminer\src\core\Directus\Services\AbstractService.php:546
+Stack trace:
+#0 S:\dbello\adminer\src\core\Directus\Services\AbstractService.php(490): Directus\Services\AbstractService->validateFieldLength
+#1 S:\dbello\adminer\src\core\Directus\Services\AbstractService.php(396): Directus\Services\AbstractService->validatePayloadWithFieldsValidation
+#2 S:\dbello\adminer\src\core\Directus\Services\ItemsService.php(32): Directus\Services\AbstractService->validatePayload
+#3 S:\dbello\adminer\src\endpoints\Items.php(69): Directus\Services\ItemsService->createItem
+#4 [internal function]: Directus\Api\Routes\Items->create
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#7 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#9 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#13 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#14 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#15 [internal function]: Slim\DeferredCallable->__invoke
+#16 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#17 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#18 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#19 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#20 [internal function]: Slim\DeferredCallable->__invoke
+#21 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#22 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#23 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#25 [internal function]: Slim\DeferredCallable->__invoke
+#26 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#27 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#29 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#30 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#31 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#32 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#35 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#36 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#37 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#38 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#39 [internal function]: Slim\DeferredCallable->__invoke
+#40 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#41 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#42 [internal function]: RKA\Middleware\IpAddress->__invoke
+#43 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#44 [internal function]: Slim\DeferredCallable->__invoke
+#45 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#46 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#47 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#48 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#49 [internal function]: Slim\DeferredCallable->__invoke
+#50 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#51 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#52 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#54 [internal function]: Slim\DeferredCallable->__invoke
+#55 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#56 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#57 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#58 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#59 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#60 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
+[2020-10-20 12:04:15] api[drbello].ERROR: Directus\Exception\UnprocessableEntityException: The value submitted (<div>
+<div>Lorem&nbsp;ipsum,&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipisicing&nbsp;elit.&nbsp;Hic&nbsp;iusto&nbsp;laborum&nbsp;quia&nbsp;deleniti&nbsp;ex&nbsp;adipisci&nbsp;fuga&nbsp;dicta&nbsp;veritatis&nbsp;eaque&nbsp;illo?&nbsp;Voluptates&nbsp;aliquid&nbsp;adipisci&nbsp;excepturi&nbsp;maxime&nbsp;qui&nbsp;expedita,&nbsp;ut,&nbsp;exercitationem&nbsp;commodi&nbsp;error&nbsp;dolorum&nbsp;nisi&nbsp;facilis&nbsp;odit&nbsp;dolor&nbsp;ex.&nbsp;Quasi&nbsp;a&nbsp;sint&nbsp;tempora&nbsp;reiciendis&nbsp;consectetur&nbsp;similique&nbsp;pariatur&nbsp;nostrum&nbsp;eligendi?&nbsp;Ab&nbsp;minus&nbsp;incidunt&nbsp;vitae&nbsp;corporis,&nbsp;sit&nbsp;nihil&nbsp;officiis&nbsp;ratione&nbsp;doloremque&nbsp;labore&nbsp;dolores&nbsp;officia&nbsp;delectus.&nbsp;Vero,&nbsp;deleniti&nbsp;atque?&nbsp;Similique&nbsp;quam&nbsp;eum&nbsp;a,&nbsp;architecto&nbsp;totam&nbsp;quo&nbsp;nemo&nbsp;dicta&nbsp;saepe&nbsp;ratione&nbsp;nam&nbsp;distinctio&nbsp;perferendis,&nbsp;molestias&nbsp;cumque&nbsp;porro&nbsp;ducimus&nbsp;rem&nbsp;libero&nbsp;nobis,&nbsp;velit&nbsp;quae&nbsp;dolorem&nbsp;eveniet&nbsp;commodi&nbsp;aliquam&nbsp;repudiandae.&nbsp;Unde,&nbsp;eius.&nbsp;Quasi&nbsp;expedita&nbsp;cum&nbsp;voluptatibus&nbsp;consectetur,&nbsp;enim,&nbsp;nobis&nbsp;veniam,&nbsp;sed&nbsp;autem&nbsp;doloremque&nbsp;neque&nbsp;natus&nbsp;repellat&nbsp;animi&nbsp;adipisci&nbsp;ut&nbsp;inventore&nbsp;iusto&nbsp;assumenda&nbsp;nihil&nbsp;temporibus&nbsp;beatae&nbsp;minus&nbsp;ea.&nbsp;Quibusdam&nbsp;corrupti&nbsp;ullam&nbsp;itaque&nbsp;aliquam&nbsp;nam&nbsp;eveniet&nbsp;perspiciatis,&nbsp;doloremque&nbsp;incidunt&nbsp;provident&nbsp;modi&nbsp;corporis&nbsp;non&nbsp;commodi,&nbsp;asperiores&nbsp;ex&nbsp;quod&nbsp;accusantium&nbsp;in&nbsp;dolorum&nbsp;minus.&nbsp;Architecto&nbsp;maxime&nbsp;nesciunt&nbsp;explicabo&nbsp;accusantium&nbsp;sint&nbsp;iusto&nbsp;consequatur&nbsp;omnis,&nbsp;aut&nbsp;ducimus&nbsp;eum&nbsp;praesentium&nbsp;est&nbsp;quia&nbsp;impedit&nbsp;quasi&nbsp;illo&nbsp;quas&nbsp;consectetur,&nbsp;veritatis&nbsp;minima&nbsp;error&nbsp;veniam&nbsp;eius!&nbsp;Blanditiis&nbsp;quisquam,&nbsp;earum,&nbsp;nesciunt&nbsp;sunt&nbsp;reprehenderit&nbsp;molestiae&nbsp;recusandae&nbsp;itaque&nbsp;amet&nbsp;veniam&nbsp;quam&nbsp;explicabo&nbsp;tenetur&nbsp;delectus&nbsp;illo?&nbsp;Consectetur&nbsp;soluta&nbsp;aperiam&nbsp;ipsam&nbsp;dolor&nbsp;totam,&nbsp;facilis&nbsp;voluptatibus&nbsp;vitae&nbsp;sequi&nbsp;porro&nbsp;numquam&nbsp;aliquid,&nbsp;enim&nbsp;magnam&nbsp;facere&nbsp;suscipit&nbsp;ratione&nbsp;placeat&nbsp;aspernatur&nbsp;explicabo&nbsp;iure&nbsp;incidunt&nbsp;illum&nbsp;praesentium&nbsp;eius&nbsp;optio&nbsp;repudiandae&nbsp;quia.&nbsp;Maxime&nbsp;saepe&nbsp;a&nbsp;deserunt&nbsp;blanditiis&nbsp;fuga&nbsp;eius&nbsp;quod&nbsp;debitis&nbsp;quae&nbsp;eos?&nbsp;In&nbsp;maxime&nbsp;accusamus&nbsp;et&nbsp;rem&nbsp;quae?&nbsp;Pariatur&nbsp;accusantium&nbsp;amet&nbsp;cumque&nbsp;blanditiis&nbsp;asperiores&nbsp;officiis&nbsp;et&nbsp;accusamus&nbsp;distinctio&nbsp;molestiae&nbsp;laborum&nbsp;vero&nbsp;consequatur&nbsp;eius&nbsp;illum&nbsp;sit&nbsp;fugiat&nbsp;quo&nbsp;dolores&nbsp;aspernatur&nbsp;deleniti&nbsp;repellendus&nbsp;voluptatem,&nbsp;praesentium&nbsp;natus&nbsp;rem&nbsp;nostrum&nbsp;culpa.&nbsp;Velit&nbsp;voluptate&nbsp;voluptatibus&nbsp;eveniet&nbsp;accusantium&nbsp;quam&nbsp;neque&nbsp;optio,&nbsp;cupiditate&nbsp;quasi&nbsp;odio&nbsp;nostrum&nbsp;nemo&nbsp;magnam&nbsp;saepe&nbsp;expedita&nbsp;suscipit.&nbsp;Nam&nbsp;illum&nbsp;reiciendis,&nbsp;accusamus&nbsp;officiis&nbsp;modi&nbsp;ex&nbsp;numquam&nbsp;cupiditate&nbsp;ab&nbsp;aliquid&nbsp;dolorum?&nbsp;Voluptatem&nbsp;hic&nbsp;quae&nbsp;repellendus&nbsp;tenetur&nbsp;ipsa&nbsp;quis,&nbsp;aliquam&nbsp;nobis&nbsp;ullam&nbsp;dolorem&nbsp;deserunt&nbsp;dolorum.&nbsp;Dolore.</div>
+</div>) for 'Content' is longer than the field's supported length (2000). Please submit a shorter value or ask an Admin to increase the length. in S:\dbello\adminer\src\core\Directus\Services\AbstractService.php:546
+Stack trace:
+#0 S:\dbello\adminer\src\core\Directus\Services\AbstractService.php(490): Directus\Services\AbstractService->validateFieldLength
+#1 S:\dbello\adminer\src\core\Directus\Services\AbstractService.php(396): Directus\Services\AbstractService->validatePayloadWithFieldsValidation
+#2 S:\dbello\adminer\src\core\Directus\Services\ItemsService.php(32): Directus\Services\AbstractService->validatePayload
+#3 S:\dbello\adminer\src\endpoints\Items.php(69): Directus\Services\ItemsService->createItem
+#4 [internal function]: Directus\Api\Routes\Items->create
+#5 S:\dbello\adminer\vendor\slim\slim\Slim\Handlers\Strategies\RequestResponse.php(40): call_user_func
+#6 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(281): Slim\Handlers\Strategies\RequestResponse->__invoke
+#7 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\Route->__invoke
+#8 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#9 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#10 [internal function]: Slim\DeferredCallable->__invoke
+#11 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#12 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AuthenticationMiddleware.php(124): Slim\Route->Slim\{closure}
+#13 [internal function]: Directus\Application\Http\Middleware\AuthenticationMiddleware->__invoke
+#14 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#15 [internal function]: Slim\DeferredCallable->__invoke
+#16 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#17 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\TableGatewayMiddleware.php(25): Slim\Route->Slim\{closure}
+#18 [internal function]: Directus\Application\Http\Middleware\TableGatewayMiddleware->__invoke
+#19 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#20 [internal function]: Slim\DeferredCallable->__invoke
+#21 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#22 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\DatabaseMigrationMiddleware.php(15): Slim\Route->Slim\{closure}
+#23 [internal function]: Directus\Application\Http\Middleware\DatabaseMigrationMiddleware->__invoke
+#24 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#25 [internal function]: Slim\DeferredCallable->__invoke
+#26 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#27 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\Route->Slim\{closure}
+#28 S:\dbello\adminer\vendor\slim\slim\Slim\Route.php(268): Slim\Route->callMiddlewareStack
+#29 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(503): Slim\Route->run
+#30 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\AbstractRateLimitMiddleware.php(34): Slim\App->__invoke
+#31 [internal function]: Directus\Application\Http\Middleware\AbstractRateLimitMiddleware->__invoke
+#32 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#33 [internal function]: Slim\DeferredCallable->__invoke
+#34 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#35 S:\dbello\adminer\vendor\directus\proxy-detection\src\ProxyDetectionMiddleware.php(30): Slim\App->Slim\{closure}
+#36 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ProxyMiddleware.php(18): RKA\Middleware\ProxyDetectionMiddleware->__invoke
+#37 [internal function]: Directus\Application\Http\Middleware\ProxyMiddleware->__invoke
+#38 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#39 [internal function]: Slim\DeferredCallable->__invoke
+#40 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#41 S:\dbello\adminer\vendor\akrabat\ip-address-middleware\src\IpAddress.php(113): Slim\App->Slim\{closure}
+#42 [internal function]: RKA\Middleware\IpAddress->__invoke
+#43 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#44 [internal function]: Slim\DeferredCallable->__invoke
+#45 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#46 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\CorsMiddleware.php(71): Slim\App->Slim\{closure}
+#47 [internal function]: Directus\Application\Http\Middleware\CorsMiddleware->__invoke
+#48 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#49 [internal function]: Slim\DeferredCallable->__invoke
+#50 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#51 S:\dbello\adminer\src\core\Directus\Application\Http\Middleware\ResponseCacheMiddleware.php(63): Slim\App->Slim\{closure}
+#52 [internal function]: Directus\Application\Http\Middleware\ResponseCacheMiddleware->__invoke
+#53 S:\dbello\adminer\vendor\slim\slim\Slim\DeferredCallable.php(57): call_user_func_array
+#54 [internal function]: Slim\DeferredCallable->__invoke
+#55 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(70): call_user_func
+#56 S:\dbello\adminer\vendor\slim\slim\Slim\MiddlewareAwareTrait.php(117): Slim\App->Slim\{closure}
+#57 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(392): Slim\App->callMiddlewareStack
+#58 S:\dbello\adminer\vendor\slim\slim\Slim\App.php(297): Slim\App->process
+#59 S:\dbello\adminer\src\core\Directus\Application\Application.php(161): Slim\App->run
+#60 S:\dbello\adminer\index.php(5): Directus\Application\Application->run [] []
